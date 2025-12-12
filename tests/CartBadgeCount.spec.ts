@@ -14,7 +14,7 @@ test('Cart badge updates correctly when adding multiple items', async ({ page })
     await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
     await page.locator('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click();
 
-    await expect(page.locator('shopping_cart_badge')).toHaveText('3');
+    await expect(page.locator('.shopping_cart_badge')).toHaveText('3');
 
 
 
