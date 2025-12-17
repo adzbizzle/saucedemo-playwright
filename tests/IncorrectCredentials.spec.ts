@@ -2,13 +2,13 @@ import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/login.page';
 
 test.describe('Negative Login Tests - SauceDemo', () => {
-  
+
   test.beforeEach(async ({ page }) => {
     const login = new LoginPage(page);
     await login.goto();
   });
 
-  // Wrong username OR password
+  // Wrong username
   test('Invalid credentials show "do not match" error', async ({ page }) => {
     const login = new LoginPage(page);
 
