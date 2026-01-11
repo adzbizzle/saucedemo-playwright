@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": "../.."
+		},
+		{
+			"name": "SoftwareTestingChampion",
+			"path": "../../../SoftwareTestingChampion"
 		}
 	],
 	"settings": {}
